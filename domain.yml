@@ -1,0 +1,191 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- pencegahan
+- pengobatan
+- klorokuin
+- what_is_covid
+- gejala
+- penularan
+- tips
+- hidroksiklorokuin
+- favipiravir
+- cuci_tangan
+- masker
+- penggunaan_masker
+- buang_masker
+- kendaraan_umum
+- tempat_kerja
+- setelah_pergi
+- daya_tahan
+- obat_aman
+responses:
+  utter_greet:
+  - buttons:
+    - payload: Apa itu Covid-19?
+      title: Apa itu Covid-19?
+    - payload: Gejala
+      title: Gejala
+    - payload: Penularan
+      title: Penularan
+    - payload: Pencegahan
+      title: Pencegahan
+    - payload: Tips
+      title: Tips
+    - payload: Pengobatan
+      title: Pengobatan
+    text: Halo, aku adalah WingsBot yang akan memberimu info mengenai Covid-19! Apa
+      saja yang ingin kamu ketahui tentang Covid-19? Ketik "hi" untuk kembali ke main
+      menu
+  utter_klorokuin:
+  - image: https://i.imgur.com/4xBMil2.png
+    text: Apakah kamu ingin tahu tentang obat lain? Silakan kembali ke Pengobatan
+      atau ketik "hi" untuk ke menu utama
+  utter_what_is_covid:
+  - buttons:
+    - payload: Gejala
+      title: Gejala
+    - payload: Pencegahan
+      title: Pencegahan
+    - payload: Penularan
+      title: Penularan
+    - payload: Tips
+      title: Tips
+    - payload: Pengobatan
+      title: Pengobatan
+    text: COVID-19 merupakan penyakit menular yang disebabkan oleh jenis virus Corona
+      baru (novel coronavirus/nCov). Virus Corona baru mirip dengan keluarga virus
+      yang menyebabkan SARS (Severe Acute Respiratory Syndrome) dan sejumlah influensa
+      biasa. Apa lagi yang ingin kamu tahu?
+  utter_pengobatan:
+  - buttons:
+    - payload: Klorokuin
+      title: Klorokuin
+    - payload: Hidroksiklorokuin
+      title: Hidroksiklorokuin
+    - payload: Favipiravir
+      title: Favipiravir
+    text: Ada beberapa metode pengobatan, mana yang ingin kamu tahu?
+  utter_hidroksiklorokuin:
+  - image: https://i.imgur.com/4WwG85C.png
+    text: Apakah kamu ingin tahu tentang obat lain? Silakan kembali ke Pengobatan
+      atau ketik "hi" untuk ke menu utama
+  utter_obat_extra:
+  - buttons:
+    - payload: Pengobatan
+      title: Pengobatan
+    text: Untuk info lebih lanjut soal pengobatan silakan kunjungi bit.ly/InformatoriumObatCOVID19
+  utter_favipiravir:
+  - image: https://i.imgur.com/ziJEeeA.png
+    text: Apakah kamu ingin tahu tentang obat lain? Silakan kembali ke Pengobatan
+      atau ketik "hi" untuk ke menu utama
+  utter_gejala:
+  - image: https://i.imgur.com/vnqewpG.png
+    text: Menyeramkan sekali ya gejalanya, yuk kita cegah, mau tau cara pencegahannya?
+  utter_penularan:
+  - image: https://i.imgur.com/vnlb0dE.png
+    text: Mau tau cara mencegahnya?
+  utter_pencegahan:
+  - image: https://i.imgur.com/HLO5IzG.png
+    text: Seperti yang kita ketahui, mencuci tangan dan masker adalah penting, mau
+      tahu tentang keduanya?
+  utter_cuci_tangan:
+  - image: https://i.imgur.com/yOEKGqA.png
+    text: Nah, mudah kan mencuci tangan! Selanjutnya mari kita bahas mengenai masker
+      lebih detail!
+  utter_masker:
+  - image: https://i.imgur.com/AIULGOh.png
+    text: Setelah tahu jenis masker, yuk belajar cara penggunaan dan buang masker
+  utter_penggunaan_masker:
+  - image: https://i.imgur.com/KkgbcfR.png
+    text: Setelah dipakai, yuk belajar cara buangnya
+  utter_buang_masker:
+  - image: https://i.imgur.com/uXhR30l.png
+    text: Mudah kan!!! Selalu buanglah masker dengan tepat! Jika ada yang bisa aku
+      bantu lagi, silakan ketik "hi" untuk kembali ke menu utama
+  utter_tips:
+  - buttons:
+    - payload: Pencegahan di Tempat Kerja
+      title: Pencegahan di Tempat Kerja
+    - payload: Pencegahan Setelah Bepergian
+      title: Pencegahan Setelah Bepergian
+    - payload: Menjaga Daya Tahan Tubuh
+      title: Menjaga Daya Tahan Tubuh
+    - payload: Mendapatkan Obat Aman
+      title: Mendapatkan Obat Aman
+    text: Ada beberapa tips yang bisa aku berikan
+  utter_kendaraan_umum:
+  - image: https://i.imgur.com/E7hCnXQ.png
+    text: Ingin tips lain? silakan ketik "Tips" pada kolom chat
+  utter_tempat_kerja:
+  - image: https://i.imgur.com/w3IJg4t.png
+    text: Ingin tips lain? silakan ketik "Tips" pada kolom chat
+  utter_setelah_pergi:
+  - image: https://i.imgur.com/Wov0qJn.png
+    text: Ingin tips lain? silakan ketik "Tips" pada kolom chat
+  utter_daya_tahan:
+  - buttons:
+    - payload: Tips
+      title: Tips
+    image: https://i.imgur.com/G2HYrN9.png
+    text: Tips lain?
+  utter_obat_aman:
+  - image: https://i.imgur.com/bE6HxNk.png
+    text: Ingin tips lain? silakan ketik "Tips" pada kolom chat
+  utter_tombol_cegah:
+  - buttons:
+    - payload: Pencegahan
+      title: Pencegahan
+    text: Klik tombol ini
+  utter_tombol_cuci_masker:
+  - buttons:
+    - payload: Cuci Tangan
+      title: Cuci Tangan
+    - payload: Masker
+      title: Masker
+    text: Klik tombol ini
+  utter_tombol_masker:
+  - buttons:
+    - payload: Masker
+      title: Masker
+    text: Klik tombol ini
+  utter_tombol_penggunaan_buang:
+  - buttons:
+    - payload: Penggunaan Masker
+      title: Penggunaan Masker
+    - payload: Buang Masker
+      title: Buang Masker
+    text: Klik tombol ini
+  utter_tombol_buang:
+  - buttons:
+    - payload: Buang Masker
+      title: Buang Masker
+    text: Klik tombol ini
+actions:
+- utter_greet
+- utter_klorokuin
+- utter_what_is_covid
+- utter_pengobatan
+- utter_hidroksiklorokuin
+- utter_obat_extra
+- utter_favipiravir
+- utter_gejala
+- utter_penularan
+- utter_pencegahan
+- utter_cuci_tangan
+- utter_masker
+- utter_penggunaan_masker
+- utter_buang_masker
+- utter_tips
+- utter_kendaraan_umum
+- utter_tempat_kerja
+- utter_setelah_pergi
+- utter_daya_tahan
+- utter_obat_aman
+- utter_tombol_cegah
+- utter_tombol_cuci_masker
+- utter_tombol_masker
+- utter_tombol_penggunaan_buang
+- utter_tombol_buang
